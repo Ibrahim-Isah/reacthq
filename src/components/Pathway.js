@@ -6,7 +6,7 @@ const Pathway = () => {
 			<h1 className='text-center my-5 font-[700] text-[36px]'>
 				Our Program Pathway
 			</h1>
-			<div className='block mx-auto w-3/5 md:w-full space-y-7 md:space-y-0 md:flex md:items-center md:justify-evenly'>
+			<div className='block mx-auto w-4/5 md:w-full space-y-7 md:space-y-0 md:flex md:items-center md:justify-evenly'>
 				<div className='border border-gray-300 max-w-[300px] '>
 					<img
 						src={dataPath[0].image}

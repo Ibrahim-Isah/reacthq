@@ -27,3 +27,21 @@ export const ButtonCard = ({ title, details, buttonText }) => {
 		</div>
 	);
 };
+
+export const TestimonialCard = ({ name, details }) => {
+	return (
+		<div className='rounded-xl px-14 py-8 md:p-12 my-auto mx-auto md:mx-0 bg-white w-[90%] md:w-3/6 flex flex-col items-start space-y-5'>
+			<p className='font-[400] max-w-lg text-[24px] md:text-[24px] leading-[44px]'>
+				{details}
+			</p>
+			<div className='flex items-center justify-center'>
+				<img
+					src='assets/profile.png'
+					alt='testimonial'
+					className='h-14 w-[5px] max-w-[65px]'
+				/>
+				<p className='text-[18px]'>{name}</p>
+			</div>
+		</div>
+	);
+};

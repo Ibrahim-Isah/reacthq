@@ -112,12 +112,35 @@ const Footer = () => {
 			</div>
 			<div>
 				<div className='w-full bg-white h-2 my-5' />
-				<div className='grid'>
-					<p className='text-xl col-span-9'>
+				<div className='block md:flex md:justify-between md:items-center'>
+					<p className='text-xl'>
 						&copy; 2022 ReactHQ- ReactHQ, Sprint and Spaces are Trademarks of
 						Hydratech Software Solutions Ltd. Lagos
 					</p>
-					<div className='col-span-3'>doings</div>
+					<div className=''>
+						<ul className='flex items-center justify-evenly space-x-6'>
+							<li>
+								<button className='btn '>
+									<i className='fa fa-facebook h-10 w-10'></i>
+								</button>
+							</li>
+							<li>
+								<button className='btn'>
+									<i className='fa fa-twitter h-10 w-10'></i>
+								</button>
+							</li>
+							<li>
+								<button className='btn'>
+									<i className='fa fa-instagram h-10 w-10'></i>
+								</button>
+							</li>
+							<li>
+								<button className='btn'>
+									<i className='fa fa-linkedin h-10 w-10'></i>
+								</button>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>

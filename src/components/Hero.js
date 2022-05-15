@@ -37,7 +37,7 @@ const Hero = () => {
 						</div>
 					</div>
 					<div className='my-10 space-y-6'>
-						<div className='w-3/5 md:w-full mx-auto space-y-5 md:space-y-0 flex flex-col md:flex-row md:justify-evenly md:items-center'>
+						<div className='w-4/5 md:w-full mx-auto space-y-5 md:space-y-0 flex flex-col md:flex-row md:justify-evenly md:items-center'>
 							<Button
 								variant='normal'
 								className='bg-[#106FA8] px-10 '
@@ -49,7 +49,7 @@ const Hero = () => {
 								text='Project Management'
 							/>
 						</div>
-						<div className='w-3/5 md:w-full mx-auto space-y-5 md:space-y-0 flex flex-col md:flex-row md:justify-evenly md:items-center'>
+						<div className='w-4/5 md:w-full mx-auto space-y-5 md:space-y-0 flex flex-col md:flex-row md:justify-evenly md:items-center'>
 							<Button
 								variant='normal'
 								className='bg-[#2510A8] px-4'
