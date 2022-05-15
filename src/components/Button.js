@@ -24,4 +24,5 @@ export const ButtonVariant = {
 	secondary:
 		'bg-white text-[#F3723F] border border-[#F3723F] rounded-lg shadow-lg hover:bg-white hover:text-[#F3723F]',
 	borderless: 'border-0 bg-white text-[#F3723F]',
+	normal: 'border-0 text-white p-2 rounded text-[18px]',
 };

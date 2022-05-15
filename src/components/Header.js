@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from './Button';
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
+import Sidebar from './Sidebar';
 
 const Header = () => {
 	const history = useHistory();
@@ -18,21 +19,25 @@ const Header = () => {
 				/>
 			</div>
 			<div>
-				<Button
-					text='FAQS'
-					variant='borderless'
-					className='py-4 px-16 mx-5 font-bold text-[18px]'
-				/>
-				<Button
-					text='Sign in'
-					variant='secondary'
-					className='py-4 px-16 mx-5 font-bold text-[18px]'
-				/>
-				<Button
-					text='Sign up'
-					variant='primary'
-					className='py-4 px-16 mx-5 font-bold text-[18px] '
-				/>
+				<div className='hidden md:flex'>
+					<Button
+						text='FAQS'
+						variant='borderless'
+						className='py-4 px-16 mx-5 font-bold text-[18px]'
+					/>
+					<Button
+						text='Sign in'
+						variant='secondary'
+						className='py-4 px-16 mx-5 font-bold text-[18px]'
+					/>
+					<Button
+						text='Sign up'
+						variant='primary'
+						className='py-4 px-16 mx-5 font-bold text-[18px] '
+					/>
+				</div>
+
+				<Sidebar />
 			</div>
 		</div>
 	);

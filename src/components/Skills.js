@@ -8,17 +8,17 @@ const Skills = () => {
 				<h2 className='text-[36px] font-[700] mb-4'>
 					WHAT DO YOU STAND TO GAIN?
 				</h2>
-				<p className='text-[36px] max-w-4xl mx-auto'>
+				<p className=' text-[24px] md:text-[36px] max-w-4xl mx-auto'>
 					You really don’t have valuable time or money to waste, so why not
 					learn in a proven way?
 				</p>
 			</div>
-			<div className='mx-auto w-4/5 md:grid md:grid-cols-2 md:gap-4 block space-y-5 md:space-y-0'>
+			<div className='mx-auto w-full md:w-4/5 md:grid md:grid-cols-2 md:gap-4 block space-y-5 md:space-y-0'>
 				{data.map((item) => (
 					<CardSmall title={item.title} details={item.details} />
 				))}
 			</div>
-			<div className='w-4/5 my-12 mx-auto'>
+			<div className='w-full md:w-4/5 my-12 mx-auto'>
 				<ButtonCard
 					title='Get Certified'
 					buttonText='Become a ReActor'
