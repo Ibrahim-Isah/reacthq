@@ -1,16 +1,21 @@
-import React from 'react';
-import { Counter } from './features/counter/Counter';
+import React, { Suspense } from 'react';
+import Login from './pages/login';
+import Landing from './pages/landing';
+import NotFound from './pages/notFound';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 
 function App() {
 	return (
-		<div className='App'>
-			<div className='text-xl text-green-500'>
-				Hello World, Welcome to bitmama Isah Ibrahim. We are happy to have you
-				as our new employee
-			</div>
-			<Counter />
-		</div>
+		<Router>
+			<Suspense fallback={<p>Loading...</p>}>
+				<Switch>
+					<Route path='/login' component={Login} exact />
+					<Route path='/' component={Landing} exact />
+					<Route component={NotFound} />
+				</Switch>
+			</Suspense>
+		</Router>
 	);
 }
 
